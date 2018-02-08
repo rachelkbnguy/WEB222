@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>^T.Y.S^SignUp_ NGUY</title>
+        <link rel="stylesheet" href="normalize1.css" type = 'text/css'>
+        <script src="registration.js"></script>
+    </head>
+    
+    <body class="content">
+        <header>
+            <div class="header">
+                <h1>
+                    <br>
+                    ! The Yummmh Store ! 
+                </h1>
+            </div>
+        </header>
+        <br>  
+    <nav>
+    <div class="menu">
+                <h3>Welcome</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Sign-Up</a></li>
+                    <li><a href="catal.html">Yummm Food</a></li>
+                    <li><a href="underCon.html">Promation</a></li>
+                    <li><a href="underCon.html">Contact us</a></li>
+                </ul>
+        </div>
+</nav>
+  <section class="center">
+            <div id="form">
+                <h2>Be Our Member!</h2>
+                <p><span>* information is required (Please follow the instructions!)</span></p>
+        <form id="signup" action="https://httpbin.org/post " method="post" onsubmit="return formCheck();">
+               
+            Frist Name<span>*</span>&nbsp;  : <input type="text" name ="fname" id="fname" size="30" pattern="[A-Za-z\s]*" placeholder="LetterS ONLY" required><br><br>
+            Last Name<span>*</span> &nbsp;: <input type="text" name="lname" id="lname" size="30" pattern="[A-Za-z\s]*" placeholder="LetterS ONLY" required><br><br>
+            Username<span>*</span> &nbsp;&nbsp;: <input type="text" name="username" id="username" size="30" placeholder="Ex: primeMofca15" onchange="unameCheck()" required><br><br>
+            Password<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="pwrd" id="pwrd" size="30" placeholder="Ex: @Nevergeeup11" onchange="passCheck()" required><br><br>
+            Retype Password<span>*</span> : <input type="text" name="repwrd" id="repwrd" size="30" onchange="rePassCheck()" required><br><br>
+            Home Address<span>*</span>:
+            <pre id="Homeadd">Number       Street                           Apt#</pre>
+            <input type="text" name="add_no" id="add_no" size="6" required>
+            &nbsp;&nbsp;&nbsp;
+            <input type="text" name="add_st" id="add_st" size="35" pattern="[A-Za-z\s]" placeholder="Letters ONLY" required>
+            &nbsp;&nbsp;&nbsp;
+            <input type="text" name="add_apt" id="add_apt" size="6"  required><br>
+            <pre id="Hadd">City                   Province                     ZipCode</pre>
+            <input type="text" name="add_cty" id="add_cty" size="20" pattern="[A-Za-z\s]" placeholder="Letters ONLY" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="province">
+                <option value="Ontario">Ontario</option>
+                <option value="Alberta">Alberta</option>
+                <option value="British Colombia">British Colombia</option>
+                <option value="Manitoba">Manitoba</option>   
+                <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                <option value="New Brunswick">New Brunswick</option>
+                <option value="Northwest Territories">Northwest Territories</option> 
+                <option value="Nova Scotia">Nova Scotia</option>
+                <option value="Nunavut">Nunavut</option>            
+                <option value="Prince Edward Island">Prince Edward Island</option>                
+                <option value="Quebec">Quebec</option>
+                <option value="Saskatchewan">Saskatchewan</option>
+                <option value="Yukon">Yukon</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="add_zcode" id="add_zcode" size="6" data-ng-maxlength="6" pattern="^[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]" placeholder="L5B0G3" required><br><br>
+            Email Adrress<span>*</span> : <input type="email" name="email" id="email" size="30" placeholder=myemail23@gmail.com required><br><br>
+            Phone Number<span>*</span> : <input type="tel" name="phone" id="phone" size="20" data-ng-maxlength="12" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="647-301-6757" required><br><br>
+        <input type="hidden" name="lastName" id="lastName" value="NGUY" />
+        <input type="hidden" name="studentId" id="studentId" value="126463165" />
+        <div class=button>
+        <input class ="button" type="submit" name="submit" id="submit" value="Sign Up">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input class ="button" type="reset" name="Reset" id="Reset" value="Reset">
+        </div>
+     </form>  
+    </div>  
+        </section>
+   
+<section class="side">
+    <div > 
+        <p>.Note.</p>
+        <br>
+        <p id= "err_message">
+        </p>  
+    </div>
+</section>
+ 
+<footer class="footer">
+    <p>
+         &copy; 2017 KHAI BINH NGUY
+    </p>
+</footer>  
+</body>
+</html>

@@ -1,0 +1,15 @@
+nav ul li{
+    display: block;
+    background-color:  palevioletred;
+    position: relative;
+}
+nav ul li ul{
+    visibility: hidden;
+    transition: opacity 0.2s;
+    position: absolute;
+    background-color: palevioletred;
+}
+nav ul li:hover ul{
+    display: block;
+    visibility: visible;
+}

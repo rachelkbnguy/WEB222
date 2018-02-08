@@ -1,0 +1,107 @@
+
+div.content{
+    width: 960px;
+    margin: 0 auto;
+}
+header{
+    color: darkorange ;
+    width:100%;
+    height: 200px;
+    background-image:url("pics/fries.gif");
+    font-size: 28px;
+    text-align: center;
+    text-shadow:10px 7px 7px black;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+nav{
+    float: left;
+    width:15%;
+    height: 460px;
+	margin-right:10px;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    margin-bottom: 5px;
+}
+nav div ul li {
+    color: darkred;
+    font-weight: bold;
+    font-family:script,segoe script,segoe print,arial;
+    margin-top:20px ;	
+    font-size: 20px;  
+}
+.center{
+    float: left;
+    width:60%;
+    height: 440px;
+    background-color:burlywood;
+    position: relative;
+    margin-right:10px;
+    overflow: auto;
+    padding:10px;
+    margin-bottom: 5px;
+}
+.center div table.catal, th,td{
+    border: 1px solid gray;
+}
+.center div p {
+display: block;
+padding:20px;
+}
+
+.center div h2{
+    text-align: center;
+}
+.center div img{
+    vertical-align: middle;
+    width:80%;
+}
+.button{
+    text-align: center;
+}
+span{
+    color: red;
+}
+
+.side{
+    float: left;
+    width:20%;
+    height:300px;
+    margin-right:10px;
+    background-color:lightgoldenrodyellow;
+    position: relative;
+    margin-bottom: 5px;
+}
+.side div p{
+    width: 100%;
+    font-weight: bold;
+    font-size:20px;
+    text-align: center;
+    color: red;
+}
+.side div p span{
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.side div{
+   overflow: hidden; 
+   padding:5px 5px 5px 5px;
+}
+.side img{
+     width: 100%
+ }
+
+
+footer{
+    margin-top: 470px;
+    width:97%;
+    height: 25px;
+    padding:20px;
+    background-color: darkorange;
+    border-radius: 15px;
+    font-weight: bold;
+    position: relative;
+}
